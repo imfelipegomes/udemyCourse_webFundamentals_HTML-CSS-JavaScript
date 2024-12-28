@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+
+    <style>
+        div {
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+
+            border-radius: 50px 20px 0 80px / 100px 50px 0; /* Este formato é conhecido como elipse. Começa de eixo horizontal antes e barra e após a barra é eixo vertical */
+
+            box-shadow: 10px -10px 0 black, 0 20px 0 red, -10px -10px 0 blue; /* Segue a mesma regra border-radius em relação a ordem. Faz uma sombra. E sempre a sombra que foi criada primeiro será a da posição acima de todas, neste caso é a black. */ 
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
