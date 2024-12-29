@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Transition</title>
+
+    <style>
+
+        div {
+
+            --anima: cubic-bezier(.63,.14,.33,.88);
+
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+            transition-property: width, height, background-color;
+            transition-duration: .5s, 1s;
+            transition-timing-function: cubic-bezier(.63,.14,.33,.88);
+            transition-delay: 0s, .3s;
+        
+            /* transition: property(all) duration(0s) function(ease) delay(0s); */
+            transition: width .5s var(--anima), height 1s var(--anima) .3s, background-color .5s ease;
+
+
+            font-family: 'Courier New', Courier, monospace;
+            font-size: .700rem;
+        }
+
+        div:hover {
+            width: 400px;
+            height: 300px;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.929);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Transições</h1>
+    </div>
+</body>
+</html>
